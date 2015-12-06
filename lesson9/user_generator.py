@@ -1,6 +1,10 @@
 def get_components(burger):
+    print("before for")
     for component in burger.components:
+        print("before yield")
         yield component
+        print("after yield")
+    print("after for")
 
 class SuperDuperBurger(object): 
     def __init__(self):
