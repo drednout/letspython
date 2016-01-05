@@ -1,6 +1,6 @@
 import MySQLdb
 
-con = MySQLdb.connect('localhost', 'root', '1', 'lesson12');
+con = MySQLdb.connect('localhost', 'root', 'root', 'lesson12');
 
 sql_data = {
     "id": 1,
