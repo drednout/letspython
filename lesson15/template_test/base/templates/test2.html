@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Player list, version {{ version }}</title>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Created</th>
+                <th>Updated</th>
+            </tr>
+            {% for player in player_list %}
+                <tr>
+                    <td>Name: {{ player.name }}</td>
+                    <td>Email: {{ player.email}}</td>
+                    <td>Created: {{ player.created}}</td>
+                    <td>Updated: {{ player.updated}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <!-- https://docs.djangoproject.com/en/1.8/ref/templates/builtins/#for -->
+    </body>
+</html>
