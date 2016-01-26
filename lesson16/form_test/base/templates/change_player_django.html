@@ -1,0 +1,6 @@
+<h1>Changing attributes of player {{ player.id }}:</h1>
+<form action="/change_player_django_form/{{ player.id }}/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>

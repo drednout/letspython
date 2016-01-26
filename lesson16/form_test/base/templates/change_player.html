@@ -1,0 +1,9 @@
+<h1>Changing attributes of player {{ player.id }}:</h1>
+<form action="/change_player/{{ player.id }}/" method="post">
+    {% csrf_token %}
+    <label for="player_name">Name: </label>
+    <input id="player_name" type="text" name="name" value="{{ player.name }}">
+    <label for="player_email">Email: </label>
+    <input id="player_email" type="text" name="email" value="{{ player.email }}">
+    <input type="submit" value="OK">
+</form>
